@@ -200,6 +200,10 @@
     .accordion li{
         margin-left: -30px;
     }
+
+    #m-btn div i{
+        font-size: 34px;
+    }
 }
 
 @media (max-width: 440px) {
