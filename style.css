@@ -1,0 +1,461 @@
+:root{
+    --dark-blue: #081421;
+    --pinky-pp: #d91f76;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: var(--dark-blue);
+}
+
+
+
+
+/* <!----------- navbar start ------------> */
+nav{
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0px -8px 20px var(--pinky-pp);
+}
+
+nav .logo img{
+    width: 220px;
+    height: 75px;
+    margin: 8px 40px;
+    cursor: pointer;
+}
+
+nav .nav-list ul{
+    display: flex;
+    margin: 6px 40px;
+}
+
+nav .nav-list ul li{
+    list-style: none;
+    margin: 8px 30px;
+    padding: 6px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav .nav-list ul li a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 4px;
+    transition: all 0.7s ease;
+}
+
+nav .nav-list ul li:hover a{
+    color: var(--pinky-pp);
+    border-bottom: 2px solid var(--pinky-pp);
+}
+
+
+/* <!----------- navbar end ------------> */
+/* <!----------- front page start ------------> */
+
+.front-pg{
+    width: 100%;
+    height: 100vh;
+    /* background-color: var(--dark-blue); */
+    background: url('resources/bg-img.jpg') center center/cover no-repeat;
+}
+
+.front-pg .left::after,.front-pg .right::after{
+    content: "";
+    position: absolute;
+    height: 75vh;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 6px;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+.front-pg .left::after{
+    left: 0px;
+    border-right: 10px solid var(--pinky-pp);
+}
+
+.front-pg .right::after{
+    right: 0px;
+    border-left: 10px solid var(--pinky-pp);
+}
+
+.front-pg .container{
+    display: flex;
+    height: 35vw;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.front-pg .container h1{
+    width: 200px;
+    font-size: 3.5rem;
+    z-index: 3;
+}
+
+.front-pg .container h1 span{
+    background: linear-gradient(to bottom right, #d91f76, rgb(240, 32, 240));
+    padding: 10px;
+    font-size: 3rem;
+    position: absolute;
+    transform: rotate(-8deg);
+    cursor: pointer;
+}
+
+.front-pg .container h1 span:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(-8deg); }
+    10% { transform:  rotate(-10deg); }
+    20% { transform:  rotate(-6deg); }
+    30% { transform: rotate(-8deg); }
+    40% { transform: rotate(-6deg); }
+    50% { transform:  rotate(-10deg); }
+    60% { transform:  rotate(-8deg); }
+    70% { transform: rotate(-10deg); }
+    80% { transform:  rotate(-6deg); }
+    90% { transform: rotate(-8deg); }
+    100% { transform: rotate(-10deg); }
+  }
+
+.front-pg .container img{
+    width: 600px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid var(--pinky-pp);
+    z-index: 2;
+}
+
+.front-pg span{
+    float: right;
+    transform: rotate(-90deg);
+}
+
+.front-pg span a{
+    color: white;
+    text-decoration: none;
+}
+
+.front-pg span a i{
+    padding: 4px;
+    color: var(--pinky-pp);
+}
+
+
+/* <!----------- front page end ------------> */
+/* <!----------- docmentation page start ------------> */
+.docs-pg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+}
+
+.docs-pg img{
+    margin: 20px;
+    width: 400px;
+    height: 350px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 8px solid var(--pinky-pp);
+}
+
+.docs-content{
+    text-align: justify;    
+}
+
+.docs-content h1{
+    font-size: 2.3rem;
+}
+
+.docs-content h5{
+    font-size: 1.3rem;    
+    text-align: center;
+    margin: 0;
+}
+
+.docs-content p{
+    font-size: 1rem;
+}
+
+.docs-btn{
+    padding: 6px;
+    float: right;
+    font-size: 1rem;
+}
+
+.docs-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.docs-btn i{
+    padding: 10px;
+    margin: 4px;
+    border: 2px solid var(--pinky-pp);
+    border-radius: 50%;
+    transition: transform 1s ease;
+}
+
+.docs-btn span:hover{
+    text-decoration: underline 1px;
+}
+
+.docs-btn a:hover i{
+    transform: rotate(90deg);
+}
+
+/* <!----------- docmentation page end ------------> */
+/* <!----------- formus page start ------------> */
+
+.formus-pg{
+    width: 80%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.formus-pg h1{
+    width: 40%;
+    font-size: 3rem;
+    margin: auto;
+}
+
+.formus-pg h1 span{
+    color: var(--pinky-pp);
+}
+
+.formus-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.formus-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 320px;
+    background-color: white;
+    margin: 50px 16px;
+}
+
+.formus-box img{
+    width: 280px;
+    margin: 8px;
+    height: 250px;
+}
+
+.formus-box h1{
+    color: black;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.formus-btn{
+    cursor: pointer;
+}
+
+.formus-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.formus-btn a i{
+    padding: 6px;
+    transition: transform 1s ease;
+    border: 2px solid var(--pinky-pp);
+    border-radius: 50%;
+}
+
+.formus-btn a:hover i{
+    transform: rotate(360deg);
+}
+
+.formus-btn a span{
+    padding: 2px;
+}
+/* <!----------- formus page end ------------> */
+
+
+/* <!----------- faq page start ------------> */
+.faq-pg{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.faq-pg h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.accordion{
+    margin: auto;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.accordion li{
+    list-style: none;
+}
+
+.accordion li label{
+    display: block;
+    background-color: #a0a4b888;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 16px;
+    margin-top: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion li label::after{
+    content: "+";
+    position: absolute;
+    right: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: transform 1s ease;
+}
+
+input[type='radio']:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.accordion li label:hover{
+    background-color: #f7f8ff88;
+}
+
+.accordion li .answer{
+    padding: 0 10px;
+    background-color: #a0a4b888;
+    margin: 2px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s, padding 0.7s;
+}
+
+input[type="radio"]:checked + label + .answer{
+    max-height: 300px;
+    padding: 30px 20px;
+}
+
+.accordion li .answer p{
+    font-size: 1.3rem;
+}
+
+input[type="radio"]{
+    display: none;
+}
+/* <!----------- faq page end ------------> */
+/* <!----------- contact page start ------------> */
+.contact-pg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.contact-pg h1{
+    font-size: 3rem;
+}
+
+.contact-pg input, .contact-pg div input{
+    padding: 8px;
+    font-size: 1.2rem;
+    margin: 2px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #a0a4b888;
+    color: white;
+}
+
+.contact-pg div input{
+    width: 500px;
+}
+
+.contact-pg input{
+    width: 1022px;
+    margin: 12px 0;
+}
+
+.contact-pg input::placeholder, textarea::placeholder{
+    color: rgb(175, 175, 175);
+}
+
+.contact-pg textarea{
+    height: 120px;
+    width: 1022px;
+    padding: 8px;
+    font-size: 1.2rem;
+    margin: 2px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #a0a4b888;
+    color: white;
+    resize: none;
+}
+
+.contact-pg button{
+    padding: 6px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to bottom right, #d91f76, pink);
+    font-size: 1rem;
+    margin: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* <!----------- contact page end ------------> */
+/* <!----------- footer page start ------------> */
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    color: grey;
+}
+
+footer span{
+    margin: 0 30px;
+    font-size: 16px;
+}
+
+footer span a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    border: 1px solid grey;
+}
+/* <!----------- footer page end ------------> */
+
+
