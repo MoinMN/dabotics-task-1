@@ -23,8 +23,26 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
+        <div id="m-btn">
+            <div id="menu" class="menu"><i class="fa-solid fa-bars"></i></div>
+            <div id="cross" class="cross"><i class="fa-solid fa-xmark"></i></div>
+        </div>
     </nav>
     <!----------- navbar end ------------>    
+    
+    <!----------- aside page start ------------>
+    <aside id="asideBar">
+        <div class="newNavbar">
+            <ul id="navID">
+                <li><a onclick="hide()" href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a onclick="hide()" href="#docs"><i class="fa-solid fa-user"></i> Documentation</a></li>
+                <li><a onclick="hide()" href="#formus"><i class="fa-solid fa-diagram-project"></i> Forums</a></li>
+                <li><a onclick="hide()" href="#faq"><i class="fa-solid fa-code"></i> FAQ's</a></li>
+                <li><a onclick="hide()" href="#contact"><i class="fa-solid fa-address-book"></i> Contact Us</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!----------- aside page end ------------> 
 
     <!----------- front page start ------------>
     <div class="front-pg" id="home">
@@ -35,7 +53,9 @@
             <h1>DIGITAL SERVICES <span>PLATFORM</span></h1>
             <img src="resources/img-1.jpg" alt="404">
         </div>
-        <span><a href="#docs"><i class="fa-solid fa-arrow-left"></i>VIEW DETAILS</a></span>
+        <div class="T-text">
+            <span><a href="#docs"><i class="fa-solid fa-arrow-left"></i>VIEW DETAILS</a></span>
+        </div>
     </div>
     <!----------- front page end ------------>
 
@@ -65,15 +85,15 @@
         <div class="formus-content">
             <div class="formus-box">
                 <img src="resources/design-1.webp" alt="404">
-                <h1>MULTIPURPOSE RESPONSIVE WEB DESIGN</h1>
+                <h2>MULTIPURPOSE RESPONSIVE WEB DESIGN</h2>
             </div>
             <div class="formus-box">
                 <img src="resources/design-2.png" alt="404">
-                <h1>EPICS RESPONSIVE WEB DESIGN</h1>
+                <h2>EPICS RESPONSIVE WEB DESIGN</h2>
             </div>
             <div class="formus-box">
                 <img src="resources/design-3.jpg" alt="404">
-                <h1>DYNAMIC WEB DESIGN</h1>
+                <h2>DYNAMIC WEB DESIGN</h2>
             </div>
         </div>
         <div class="formus-btn">
@@ -152,6 +172,7 @@
     </footer>
     <!----------- footer page end ------------> 
 
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/437000937b.js" crossorigin="anonymous"></script>
 </body>
 </html>

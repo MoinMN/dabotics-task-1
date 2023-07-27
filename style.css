@@ -65,6 +65,60 @@ nav .nav-list ul li:hover a{
 
 
 /* <!----------- navbar end ------------> */
+
+/* <!----------- aside start ------------> */
+/* Menu Toggle */
+#m-btn div i{
+    font-size: 40px;
+    position: relative;
+    margin: 20px;
+}
+
+#m-btn #menu{
+    display: none;
+}
+
+#m-btn #cross{
+    display: none;
+}
+
+aside{
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    right: -280px;
+    background-color: var(--pinky-pp);
+    /* display: none; */
+    z-index: 10;
+    opacity: 0.8;
+    transition: all 1.5s ease;
+}
+
+aside .newNavbar #navID{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .newNavbar #navID li{
+    margin: 40px 0;
+    list-style: none;   
+    line-height: 30px; 
+}
+
+aside .newNavbar #navID li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+aside .newNavbar #navID li a:hover{
+    color: var(--blue-5);
+    border-bottom: 3px solid var(--blue-5);
+}
+/* <!----------- aside end ------------> */
+
 /* <!----------- front page start ------------> */
 
 .front-pg{
@@ -97,7 +151,7 @@ nav .nav-list ul li:hover a{
 
 .front-pg .container{
     display: flex;
-    height: 35vw;
+    height: 80%;
     justify-content: center;
     align-items: center;
     /* background-color: green; */
@@ -145,8 +199,9 @@ nav .nav-list ul li:hover a{
     z-index: 2;
 }
 
-.front-pg span{
+.front-pg .T-text span{
     float: right;
+    margin-top: -60px;
     transform: rotate(-90deg);
 }
 
@@ -167,9 +222,9 @@ nav .nav-list ul li:hover a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 80%;
-    margin: auto;
+    margin: 90px auto;
 }
 
 .docs-pg img{
@@ -179,23 +234,25 @@ nav .nav-list ul li:hover a{
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border: 8px solid var(--pinky-pp);
+    background-color: red;
 }
 
 .docs-content{
-    text-align: justify;    
+    width: 100%;
 }
 
-.docs-content h1{
+.docs-pg h1{
     font-size: 2.3rem;
 }
 
-.docs-content h5{
+.docs-content h5{   
     font-size: 1.3rem;    
     text-align: center;
     margin: 0;
 }
 
 .docs-content p{
+    text-align: justify;    
     font-size: 1rem;
 }
 
@@ -236,9 +293,9 @@ nav .nav-list ul li:hover a{
 }
 
 .formus-pg h1{
-    width: 40%;
+    width: 60%;
     font-size: 3rem;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .formus-pg h1 span{
@@ -248,6 +305,7 @@ nav .nav-list ul li:hover a{
 .formus-content{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -259,7 +317,7 @@ nav .nav-list ul li:hover a{
     width: 300px;
     height: 320px;
     background-color: white;
-    margin: 50px 16px;
+    margin: 20px;
 }
 
 .formus-box img{
@@ -268,7 +326,7 @@ nav .nav-list ul li:hover a{
     height: 250px;
 }
 
-.formus-box h1{
+.formus-box h2{
     color: black;
     font-size: 1.3rem;
     width: 100%;
@@ -319,6 +377,7 @@ nav .nav-list ul li:hover a{
 
 .accordion li{
     list-style: none;
+    margin: 0 -10px;
 }
 
 .accordion li label{

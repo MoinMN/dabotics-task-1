@@ -2,15 +2,30 @@
     nav .nav-list ul li{
         font-size: 1.3rem;
     }    
-}
 
-
-
-@media (max-width: 1260px) {
     nav .nav-list{
         display: none;
     }
 
+    nav{
+        justify-content: space-between;
+    }
+
+    .m-btn{
+        margin: 0 30px;
+    }
+
+    #m-btn #menu{
+        display: block;
+    }
+
+    .docs-pg{
+        width: 90%;
+    }
+
+    .contact-pg{
+        margin: 25px;
+    }
 }
 
 
@@ -19,8 +34,185 @@
         font-size: 3rem;
     }
 
+    .front-pg .container h1 span{
+        font-size: 3rem;
+    }
+
     .front-pg .container img{
         width: 500px;
         height: 300px;
+    }
+
+    
+    .docs-pg img{
+        margin: 16px;
+        width: 340px;
+        height: 300px;
+    }
+
+    .docs-content h1{
+        font-size: 2rem;
+    }
+
+    .docs-content h5{
+        font-size: 1.1rem;    
+        text-align: center;
+        margin: 0;
+    }
+
+    .formus-pg h1{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .contact-pg div input{
+        width: 400px;
+    }
+
+    .contact-pg input{
+        width: 828px;
+    }
+    
+    .contact-pg textarea{
+        width: 828px;        
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .front-pg .container{
+        height: 95%;   
+    }
+
+    .front-pg .container h1{
+        font-size: 2.7rem;
+    }
+
+    .front-pg .container h1 span{
+        font-size: 2.7rem;
+    }
+
+    .front-pg .container img{
+        width: 400px;
+        height: 250px;
+    }
+
+    .docs-pg{
+        flex-direction: column;
+    }
+
+    .faq-pg h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .accordion li label{
+        font-size: 1.1rem;
+    }
+
+    .accordion li .answer p{
+        font-size: 1rem;
+    }
+
+    .faq-pg{
+        width: 95%;
+    }
+
+    .contact-pg h1{
+        font-size: 2.5rem;
+    }
+
+    .contact-pg div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-pg div input, .contact-pg input, .contact-pg textarea{
+        width: 700px;
+        margin: 8px;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .contact-pg div input, .contact-pg input, .contact-pg textarea{
+        width: 500px;
+        margin: 7px;
+    }
+
+    nav .logo img{
+        width: 200px;
+        height: 65px;
+        margin: 6px 18px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .T-text{
+        display: none;
+    }
+
+    .front-pg .container{
+        height: 85%;   
+        width: 280px;
+    }
+    
+    .front-pg .container img{
+        display: none;
+    }
+
+    .front-pg .T-text span{
+        margin-top: -20px;
+    }
+
+    .docs-pg img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-pg div input, .contact-pg input, .contact-pg textarea{
+        width: 400px;
+        margin: 6px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .formus-box{
+        width: 250px;
+        height: 280px;
+    }
+    
+    .formus-box img{
+        width: 240px;
+        height: 200px;
+    }
+
+    .faq-pg{
+        margin: 80px 0;
+        margin-right: 20px;
+    }
+
+    .accordion li{
+        margin-left: -30px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contact-pg div input, .contact-pg input, .contact-pg textarea{
+        width: 250px;
+        margin: 5px;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+    footer span{
+        font-size: 12px;
     }
 }
